@@ -21,28 +21,51 @@ p {
 button {
     border-radius: 8px;
     background: #E55473;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border: none;
     font-size: 20px;
     font-weight: 500;
     padding: 20px 40px;
     cursor: pointer;
-    
+
 }
 
-button:hover{
-    background: green;
-}
-
-header {
-    background: rgba(229, 84, 115, 0.10);
-}
-
-.container {
+.container,
+.facility-content {
     width: 75%;
     max-width: 1440px;
     margin: 0 auto;
 }
+
+
+.section-heading {
+    max-width: 445px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-heading h2 {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+
+button:hover {
+    background: green;
+}
+
+header,
+#hot-deal {
+    background: rgba(229, 84, 115, 0.10);
+}
+
+
 
 .banner {
     display: flex;
@@ -50,7 +73,7 @@ header {
     justify-content: space-between;
 }
 
-.banner .banner-text *{
+.banner .banner-text * {
     margin-bottom: 32px;
     max-width: 525px;
 }
@@ -63,6 +86,139 @@ header {
     line-height: normal;
 }
 
-.banner .banner-img img{
+.banner .banner-img img {
     width: 100%;
+}
+
+/* featured style */
+#featured {
+    padding: 100px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+
+}
+
+.section-content .flower .flower-img {
+    background: rgba(167, 33, 98, 0.15);
+    border-radius: 300px 300px 0px 0px;
+    padding: 30px 25px 0;
+    height: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.section-content .flower .flower-img img {
+    width: 100%;
+
+}
+
+.section-content .flower .pink {
+    background: rgba(167, 33, 98, 0.15);
+
+}
+
+.section-content .flower .green {
+
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.section-content .flower .blue {
+    background: rgba(71, 125, 17, 0.15);
+
+}
+
+.section-content .flower p {
+    color: #272727;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    /* 145.833% */
+    text-decoration-line: underline;
+    margin-top: 30px;
+}
+
+
+/* facility-section */
+
+#facility-section {
+    padding: 80px 0;
+}
+
+.facility-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+
+}
+
+.facility-content .facility .facility-img {
+
+    padding: 40px 100px;
+    height: 88px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.facility-content .facility .facility-img img {
+    width: 100%;
+}
+
+.facility-content .facility p {
+    color: rgba(39, 39, 39, 0.80);
+    text-align: center;
+
+}
+
+.hot-deal-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hot-deal .hot-deal-text {
+    width: 75$;
+    max-width: 550px;
+    text-align: center;
+
+}
+
+#hot-deal .hot-deal-text h2 {
+    color: #272727;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+#hot-deal .hot-deal-text h2 .important {
+    color: #E55473;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#hot-deal .hot-deal-text p {
+    margin-bottom: 32px;
+}
+#hot-deal .hot-deal-img{
+    max-width: 318px;
+}
+.hot-deal-main{
+    padding: 100px 0;
 }
